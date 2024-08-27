@@ -1,0 +1,91 @@
+.controls {
+    background-color: rgb(104, 104, 104);
+    min-width: 200px;
+    min-height: 400px;
+    padding: 30px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.controls div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: inherit
+}
+
+.controls div span {
+    background-color: inherit;
+}
+/* Sliders =================================================================================== */
+input[type="range"] {
+    appearance: none;
+    
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+
+    /* overflow: hidden; */
+    height: 6px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;    
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+
+    transition: .2s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+}
+input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+}
+
+
+
+/* Select =================================================================================== */
+select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    padding: 1rem 4rem 1rem 1rem;
+    background: url(../assets/arrow-down.svg) no-repeat right 0.8em center / 1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+    border-radius: 5px;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold; 
+    color: black;
+    margin-bottom: 60px;
+}
+select option {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+option[value="Fire"] {
+    color: rgb(233, 85, 27);
+}
+option[value="Water"] {
+    color: rgb(80, 162, 255);
+}
+option[value="Earth"] {
+    color: rgb(109, 53, 0);
+}
+option[value="Air"] {
+    color: rgb(185, 178, 77);
+}
