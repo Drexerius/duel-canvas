@@ -158,7 +158,7 @@ const DuelCanvas = ({ players: { player1Ref, player2Ref }, toggles: { toggleMenu
       canvas.removeEventListener("mousemove", updateMousePosition);
       canvas.removeEventListener("click", checkMouseClick);
     };
-  }, [isStarted]);
+  }, [isStarted, player1Ref, player2Ref, spellColors, toggleMenu1, toggleMenu2]);
 
   return (
     <div className="wrapper">
